@@ -1,0 +1,35 @@
+.link-container {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 7vh;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 5;
+}
+
+
+
+.home-button,
+.resume-link,
+.project-link,
+.contact-link {
+    font-family: 'oswaldregular';
+    font-size: 25px;
+    color: black;
+    padding-left: 2%;
+    line-height: 1.5; /* Adjust the value as needed */
+    vertical-align: middle; /* Ensures proper vertical alignment */
+}
+
+
+
+.home-button:hover,
+.resume-link:hover,
+.project-link:hover,
+.contact-link:hover {
+    color: black;
+    text-decoration: underline;
+    font-family: 'oswaldregular';
+}

@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'oswaldregular';
+    src: url('oswald-variablefont_wght-webfont.woff2') format('woff2'),
+         url('oswald-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body .contact-container{
+    background: #A6B6C9;
+}
+
+
+.contact-container {
+    justify-content: space-around;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 100vw;
+    height: 95vh;
+    transform: translate(-50%);
+}
+
+.contact-info {
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: 7%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    color: white;
+}
+
+.phone-header,
+.phone-number,
+.email-header,
+.email {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    position: absolute;
+}
+
+.phone-header,
+.email-header {
+    border: 7px solid black;
+    width: 30%;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.phone-header {
+    top: 30%;
+    right: 35%;
+}
+
+.email-header {
+    top: 50%;
+    right: 35%;
+}
+
+

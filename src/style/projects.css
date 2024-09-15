@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+}
+
+.project-container {
+    background-color: #A6B6C9;
+    position: absolute;
+    width: 100vw;
+    height: 94vh;
+    top: 6vh;
+    z-index: 1;
+}
+
+.projects {
+    color: white;
+    position: absolute;
+    top: -30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 70px;
+    z-index: 3;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.flappy-duck-container {
+    position: absolute;
+    top: 20vh;
+    height: 70%;
+    width: 20%;
+    left: 5%;
+    z-index: 2;
+}
+
+.flappy-duck-picture,
+.maze-picture {
+    position: absolute;
+    bottom: 15%;
+    width: 95%;
+    height: 75%;
+    border-style: solid;
+    border-width: 10px;
+    z-index: 1;
+}
+
+.flappy-duck-button,
+.maze-button {
+    position: absolute;
+    width: 50%;
+    height: 10%;
+    bottom: 0%;
+    right: 50%;
+    transform: translateX(52%);
+    background-color: white;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 0;
+    z-index: 3;
+}
+.flappy-duck-button:hover,
+.maze-button:hover{
+    background-color: rgb(50, 48, 48);
+    color: white;
+    border-color: black;
+}
+.maze-container{
+    position: absolute;
+    top: 20vh;
+    height: 70%;
+    width: 20%;
+    left: 40%;
+    z-index: 2;
+}
