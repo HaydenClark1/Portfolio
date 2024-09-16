@@ -3,6 +3,7 @@ import '../../style/projects.css';
 import '../../style/link.css';
 import Maze from '../../images/maze.png'
 import FlappyDuck from '../../images/Flapy-Duck-Screenshot.png';
+import Login from '../../images/login-picture.png';
 
 function Projects(){
     const navigate = useNavigate();
@@ -21,6 +22,9 @@ function Projects(){
     const visitMaze = () =>{
         window.open('https://github.com/HaydenClark1/Maze');
     }
+    const visitLogin = () =>{
+        window.open('https://loginsub.netlify.app');
+    }
     return(
         <>
         <div className="project-container">
@@ -32,6 +36,10 @@ function Projects(){
                 <div className="maze-container">
                     <img className="maze-picture" src={Maze} alt="maze-picture" />
                     <button className="maze-button" onClick={visitMaze}>Visit</button>
+                </div>
+                <div className="login-container">
+                    <img className = "login-picture" src= {Login} alt="Login Picture" />
+                    <button className="login-button" onClick={visitLogin}>Visit</button>
                 </div>
             </div>
             <div className="link-container">

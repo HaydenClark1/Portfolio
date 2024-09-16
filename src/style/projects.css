@@ -31,8 +31,19 @@ body {
     z-index: 2;
 }
 
+.login-container {
+    position: absolute;
+    top: 20vh;
+    height: 70%;
+    width: 20%;
+    right: 5%;
+    z-index: 2;
+}
+
+
 .flappy-duck-picture,
-.maze-picture {
+.maze-picture,
+.login-picture {
     position: absolute;
     bottom: 15%;
     width: 95%;
@@ -43,7 +54,8 @@ body {
 }
 
 .flappy-duck-button,
-.maze-button {
+.maze-button,
+.login-button {
     position: absolute;
     width: 50%;
     height: 10%;
@@ -59,7 +71,8 @@ body {
     z-index: 3;
 }
 .flappy-duck-button:hover,
-.maze-button:hover{
+.maze-button:hover,
+.login-button:hover{
     background-color: rgb(50, 48, 48);
     color: white;
     border-color: black;
