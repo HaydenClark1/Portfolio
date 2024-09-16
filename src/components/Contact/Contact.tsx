@@ -6,12 +6,25 @@ function Contact(){
     const goHome = () =>{
         navigate('/');
     }
-    const goResume = () =>{
-        window.open('https://1drv.ms/w/s!AtKoeaQlCzlQgtdaRXtyp3QlhUuY8w?e=Ve8Jpa', '_blank');
-    }
 
     const goProjects = () =>{
         navigate('/projects');
+    }
+    const getResume = () =>{
+        fetch("src/components/Projects/Hayden_Clark_Resume.pdf").then((response) => {
+            response.blob().then((blob) => {
+            
+                // Creating new object of PDF file
+                const fileURL =
+                    window.URL.createObjectURL(blob);
+                    
+                // Setting various property values
+                let alink = document.createElement("a");
+                alink.href = fileURL;
+                alink.download = "Resume.pdf";
+                alink.click();
+            });
+        });
     }
     return(
         <>
@@ -30,7 +43,7 @@ function Contact(){
         </div>
     <div className='link-container'>
         <Link className='home-button' to="/" onClick={goHome}>Home</Link>
-        <Link className='resume-link' to= {window.location.pathname} onClick={goResume}>Resume</Link>
+        <Link className='resume-link' to= {window.location.pathname} onClick={getResume}>Resume</Link>
         <Link className='project-link' to="/projects" onClick={goProjects}>Projects</Link>
     </div>
     </>
