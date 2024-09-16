@@ -11,7 +11,7 @@ function Contact(){
         navigate('/projects');
     }
     const getResume = () =>{
-        fetch("src/components/Projects/Hayden_Clark_Resume.pdf").then((response) => {
+        fetch("src/Hayden_Clark_Resume.pdf").then((response) => {
             response.blob().then((blob) => {
             
                 // Creating new object of PDF file
@@ -21,7 +21,7 @@ function Contact(){
                 // Setting various property values
                 let alink = document.createElement("a");
                 alink.href = fileURL;
-                alink.download = "Resume.pdf";
+                alink.download = "HaydenClarkResume.pdf";
                 alink.click();
             });
         });
