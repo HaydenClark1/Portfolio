@@ -13,7 +13,7 @@ function Homepage(){
     navigate('/projects');
 }
 const getResume = () =>{
-    fetch('public/Hayden_Clark_Resume.pdf').then((response) => {
+    fetch('/Hayden_Clark_Resume.pdf').then((response) => {
         response.blob().then((blob) => {
         
             // Creating new object of PDF file
